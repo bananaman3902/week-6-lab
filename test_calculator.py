@@ -18,7 +18,7 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(divide(10, 2), 5)
         self.assertEqual(divide(-1, -1), 1)
         self.assertEqual(divide(-1, 1), -1)
-    with self.assertRaises(ValueError):
-        divide(1, 0)
+        with self.assertRaises(ValueError):
+            divide(1, 0)
     if __name__ == "__main__":
         unittest.main()
